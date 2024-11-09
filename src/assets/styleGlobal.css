@@ -67,6 +67,32 @@ table td a {
 
 .btn-update {
   background-color: #1014f0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #0905e4;
+  transform: scale(1.1);
+}
+
+
+.btn-update:active {
+  background-color: #058f99;
+  transform: scale(0.95);
+}
+
+.btn-update:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(21, 89, 216, 0.7);
 }
 
 
