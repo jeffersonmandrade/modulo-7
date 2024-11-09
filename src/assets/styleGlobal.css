@@ -1,0 +1,111 @@
+root, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width:200%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #a10f0f;
+  color: rgb(243, 240, 52);
+  padding: 16px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  background-color: #ffffffea;
+  margin-top: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a10f0f;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+main {
+  padding: 16px;
+}
+
+
+.btn-cadastrar {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #a10f0f;
+  color: rgb(243, 240, 52);
+}
+
+
+table td a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.btn-update {
+  background-color: #1014f0;
+}
+
+.btn-delete {
+  background-color: #470007;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #333;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white
+  ;
+}
+
