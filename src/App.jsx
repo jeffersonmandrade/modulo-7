@@ -4,9 +4,14 @@ import Table from "./components/table";
 import { getCars, deleteCar } from "./service/api";
 import { useState, useEffect } from "react";
 import { column } from "./config/columns-cars";
-
+import Top from "./components/top"
+import Form from "./components/form"
 function App() {
   const [cars, setCars] = useState([]);
+  const [form, setForm] = useState({})
+  const [isList, setList] = useState(true)
+  const [update, setUpdate] = useState(false)
+
 
   const deleteRow = async (id) => {
     try {
@@ -26,13 +31,29 @@ function App() {
     }
   };
 
+  const register = (value) => {
+    setList(value);
+  }
+
+  const edifForm = async (value) => {
+    console.log(value)
+    setForm(value)
+    setList(!isList)
+    setUpdate(true)
+  }
+
   useEffect(() => {
     fetchCars();
-  }, []);
+  }, [isList, cars]);
 
   return (
     <Layout>
-      <Table column={column} data={cars} deleteFn={deleteRow} />
+
+      <Top showList={isList} register={register} funEditForm={edifForm}/>
+      { isList ?
+     (<Table column={column} data={cars} deleteFn={deleteRow} funEditForm={edifForm} />):
+     <Form showList={setList} form={form} setForm={setForm} update={update}/>
+    }
     </Layout>
   );
 }

@@ -154,3 +154,53 @@ footer {
   ;
 }
 
+.register {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.register .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.register .field label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.register .field input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.register .field input:focus {
+  border-color: #a10f0f;
+  outline: none;
+}
+
+.register .field button {
+  background-color: #a10f0f;
+  color: rgb(243, 240, 52);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.register .field button:hover {
+  background-color: #8d0d0d;
+}
+
+

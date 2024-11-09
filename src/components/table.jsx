@@ -2,7 +2,7 @@ import { deleteCar } from "../service/api";
 
 /* eslint-disable react/prop-types */
 
-function Table({ column, data }) {
+function Table({ column, data, funEditForm }) {
   return (
     <table>
       <thead>
@@ -21,9 +21,10 @@ function Table({ column, data }) {
               <td key={col}>{row[col.toLowerCase()]}</td>
             ))}
             <td>
-              <a href="#" className="btn-update">
-                Update
-              </a>
+              <button href="#" className="btn-update"
+              onClick={() =>funEditForm(row)}
+              > Update
+              </button>
             </td>
             <td>
                 <button
