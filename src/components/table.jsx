@@ -1,8 +1,12 @@
 import { deleteCar } from "../service/api";
+import { useNavigate } from "react-router-dom";
+
 
 /* eslint-disable react/prop-types */
 
-function Table({ column, data, funEditForm }) {
+function Table({ column, data }) {
+  const navigate = useNavigate();
+
   return (
     <table>
       <thead>
@@ -22,7 +26,7 @@ function Table({ column, data, funEditForm }) {
             ))}
             <td>
               <button href="#" className="btn-update"
-              onClick={() =>funEditForm(row)}
+              onClick={() =>navigate(`/update/${row.id}`)}
               > Update
               </button>
             </td>
