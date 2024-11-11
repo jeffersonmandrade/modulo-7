@@ -1,0 +1,139 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2021,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$25,000"
+    },
+    {
+      "id": 2,
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2022,
+      "fuel": "Hybrid",
+      "doors": 4,
+      "price": "$27,500"
+    },
+    {
+      "id": 3,
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "fuel": "Gasoline",
+      "doors": 2,
+      "price": "$35,000"
+    },
+    {
+      "id": 4,
+      "brand": "Chevrolet",
+      "model": "Malibu",
+      "year": 2021,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$22,000"
+    },
+    {
+      "id": 5,
+      "brand": "BMW",
+      "model": "3 Series",
+      "year": 2023,
+      "fuel": "Diesel",
+      "doors": 4,
+      "price": "$42,500"
+    },
+    {
+      "id": 6,
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2022,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$39,000"
+    },
+    {
+      "id": 7,
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2023,
+      "fuel": "Diesel",
+      "doors": 4,
+      "price": "$45,000"
+    },
+    {
+      "id": 8,
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2021,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$28,500"
+    },
+    {
+      "id": 9,
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": 2022,
+      "fuel": "Hybrid",
+      "doors": 4,
+      "price": "$24,000"
+    },
+    {
+      "id": 10,
+      "brand": "Kia",
+      "model": "Optima",
+      "year": 2020,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$23,500"
+    },
+    {
+      "id": 11,
+      "brand": "Nissan",
+      "model": "Altima",
+      "year": 2021,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$26,000"
+    },
+    {
+      "id": 12,
+      "brand": "Subaru",
+      "model": "Impreza",
+      "year": 2022,
+      "fuel": "Gasoline",
+      "doors": 4,
+      "price": "$27,000"
+    },
+    {
+      "id": 13,
+      "brand": "Lexus",
+      "model": "IS",
+      "year": 2023,
+      "fuel": "Hybrid",
+      "doors": 4,
+      "price": "$47,500"
+    },
+    {
+      "id": 14,
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2021,
+      "fuel": "Diesel",
+      "doors": 4,
+      "price": "$20,000"
+    },
+    {
+      "id": 15,
+      "brand": "Mazda",
+      "model": "CX-5",
+      "year": 2021,
+      "fuel": "Gasoline",
+      "doors": 5,
+      "price": "$30,000"
+    }
+  ]
+}
