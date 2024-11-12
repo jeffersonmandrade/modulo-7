@@ -1,38 +1,20 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { updateCarRegister, getCarById } from "../service/api";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Form from "../components/form";
 import Error from "../components/error"
+import { useDispatch, useSelector } from "react-redux";
+import {getOneCar} from "../slices/car/actions"
+
 function Update() {
   const { id } = useParams();
-  const [car, setCar] = useState({});
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const car = useSelector((state) => state.car.form)
 
-  const setChange = (field, value) => {
-    setCar((prevCar) => ({
-      ...prevCar,
-      [field]: value
-    }));
-  };
+console.log("AQUI UPDATE PAGE",car)
+useEffect(() => {
+  dispatch(getOneCar(id));
+}, [id, dispatch]);
 
-  const updateCar = async () => {
-    try {
-      await updateCarRegister(car);
-      setCar({});
-      navigate("/");
-    } catch (error) {
-      console.error("Error updating car:", error);
-      throw new Error("Error update!");
-    }
-  };
-
-  useEffect(() => {
-    (async () => {
-      const carData = await getCarById(id);
-      console.log(car)
-      setCar(carData);
-    })();
-  }, [id]);
 
   if(!car.id){
     return(
@@ -40,7 +22,7 @@ function Update() {
     )
   }
   return (
-    <Form submit={updateCar} change={setChange} form={car} />
+    <Form isUpdate />
   );
 }
 

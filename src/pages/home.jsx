@@ -1,42 +1,17 @@
 import "../assets/styleGlobal.css";
 import Table from "../components/table";
-import { getCars, deleteCar } from "../service/api";
-import { useState, useEffect } from "react";
-import { column } from "../config/columns-cars";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getAllCars } from "../slices/car/actions";
 function Home() {
-  const [cars, setCars] = useState([]);
-  const [isList, setList] = useState(true)
 
-
-  const deleteRow = async (id) => {
-    try {
-      await deleteCar(id);
-      setCars((prevCars) => prevCars.filter((car) => car.id !== id));
-    } catch (error) {
-      console.error("Error deleting car:", error);
-    }
-  };
-
-  const fetchCars = async () => {
-    try {
-      const data = await getCars();
-      setCars(data);
-    } catch (error) {
-      console.error("Error fetching cars:", error);
-    }
-  };
-
-
-  const edifForm = async () => {
-    setList(!isList)
-  }
-
+  const dispatch = useDispatch()
   useEffect(() => {
-    fetchCars();
-  }, [isList, cars]);
+    dispatch(getAllCars());
+  }, [dispatch]);
 
   return (
-    <Table column={column} data={cars} deleteFn={deleteRow} funEditForm={edifForm} />
+    <Table />
   );
 }
 

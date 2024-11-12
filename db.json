@@ -64,24 +64,6 @@
       "price": "$45,000"
     },
     {
-      "id": "8",
-      "brand": "Volkswagen",
-      "model": "Passat",
-      "year": 2021,
-      "fuel": "Gasoline",
-      "doors": 4,
-      "price": "$28,500"
-    },
-    {
-      "id": "9",
-      "brand": "Hyundai",
-      "model": "Elantra",
-      "year": 2022,
-      "fuel": "Hybrid",
-      "doors": 4,
-      "price": "$24,000"
-    },
-    {
       "id": "10",
       "brand": "Kia",
       "model": "Optima",
@@ -89,15 +71,6 @@
       "fuel": "Gasoline",
       "doors": 4,
       "price": "$23,500"
-    },
-    {
-      "id": "11",
-      "brand": "Nissan",
-      "model": "Altima",
-      "year": 2021,
-      "fuel": "Gasoline",
-      "doors": 4,
-      "price": "$26,000"
     },
     {
       "id": "12",
@@ -109,31 +82,10 @@
       "price": "$27,000"
     },
     {
-      "id": "13",
-      "brand": "Lexus",
-      "model": "IS",
-      "year": 2023,
-      "fuel": "Hybrid",
-      "doors": 4,
-      "price": "$47,500"
+      "id": "4be2"
     },
     {
-      "id": "14",
-      "brand": "Ford",
-      "model": "Focus",
-      "year": 2021,
-      "fuel": "Diesel",
-      "doors": 4,
-      "price": "$20,000"
-    },
-    {
-      "id": "15",
-      "brand": "Mazda",
-      "model": "CX-5",
-      "year": 2021,
-      "fuel": "Gasoline",
-      "doors": 5,
-      "price": "$30,000"
+      "id": "21a2"
     }
   ]
 }
